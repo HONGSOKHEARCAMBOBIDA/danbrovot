@@ -1,0 +1,65 @@
+:root {
+  --c-primary: #8b1018;
+  --c-primary-dark: #78151b;
+  --c-secondary: #222222;
+  --c-bg: #f7f7f7;
+  --c-surface: #ffffff;
+  --c-text: #222222;
+  --c-muted: #777777;
+  --c-border: #e5e5e5;
+  --font-khmer: 'Battambang', 'Noto Sans Khmer', sans-serif;
+  --font-display: 'Noto Serif Khmer', 'Noto Sans Khmer', serif;
+  --font-latin: 'Inter', system-ui, sans-serif;
+  --radius: 4px;
+  --header-h: 68px;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-hover: 0 6px 18px rgba(0, 0, 0, 0.08);
+  --el-color-primary: #8b1018;
+  --el-color-primary-light-3: #a8454b;
+  --el-color-primary-light-5: #c5878b;
+  --el-color-primary-light-7: #e2c3c5;
+  --el-color-primary-light-8: #ecd9da;
+  --el-color-primary-light-9: #f6ecec;
+  --el-color-primary-dark-2: #6f0d13;
+  --el-font-family: var(--font-latin), var(--font-khmer);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--c-bg);
+  color: var(--c-text);
+  font-family: var(--font-latin), var(--font-khmer);
+  font-size: 17px;
+  line-height: 1.85; /* Khmer script needs generous line height for stacked marks */
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4 { font-family: var(--font-display), serif; line-height: 1.5; margin: 0; color: var(--c-secondary); }
+p { margin: 0; }
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+ul { margin: 0; padding: 0; list-style: none; }
+:focus-visible { outline: 2px solid var(--c-primary); outline-offset: 2px; }
+
+.skip-link { position: absolute; left: -999px; top: 8px; background: var(--c-primary); color: #fff; padding: 8px 16px; z-index: 100; }
+.skip-link:focus { left: 8px; }
+
+.container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+.section { padding: 72px 0; }
+.section--surface { background: var(--c-surface); border-block: 1px solid var(--c-border); }
+.muted { color: var(--c-muted); }
+.meta { font-size: 14px; color: var(--c-muted); }
+.link-arrow { color: var(--c-primary); font-weight: 600; }
+.link-arrow:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+.el-button { font-family: var(--font-khmer); font-weight: 600; border-radius: var(--radius); }
+
+@media (max-width: 640px) {
+  body { font-size: 16px; }
+  .container { padding: 0 18px; }
+  .section { padding: 48px 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; scroll-behavior: auto !important; }
+}

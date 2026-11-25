@@ -1,0 +1,27 @@
+{
+  "name": "knowledge-site",
+  "version": "1.0.0",
+  "description": "Khmer knowledge & history website",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "vue-tsc --noEmit"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.2",
+    "element-plus": "^2.14.8",
+    "vue": "^3.5.46",
+    "vue-router": "^5.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.8",
+    "@vitejs/plugin-vue": "^6.0.11",
+    "typescript": "^6.0.3",
+    "unplugin-vue-components": "^32.1.0",
+    "vite": "^8.3.8",
+    "vue-tsc": "^3.3.14"
+  },
+  "private": true,
+  "type": "module"
+}
