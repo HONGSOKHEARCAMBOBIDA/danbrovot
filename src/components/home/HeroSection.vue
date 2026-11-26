@@ -33,7 +33,7 @@ h1 { color: #fff; font-size: clamp(38px, 6vw, 68px); line-height: 1.4; }
 @media (max-width: 800px) {
   .hero { padding: 64px 0; }
   .inner { grid-template-columns: 1fr; }
-  .logo { order: -1; width: 300px; justify-self: start; border-width: 4px; }
+  .logo { order: -1; width: 320px; justify-self: start; border-width: 4px; }
   .actions .el-button { flex: 1 1 100%; margin: 0; }
 }
 </style>
